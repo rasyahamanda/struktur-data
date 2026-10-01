@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card span {
+    font-weight: bold;
+}
+
+.box {
+    background: white;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+input {
+    padding: 12px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    margin-left: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.data {
+    padding: 15px;
+    margin: 8px 0;
+    background: #f1f1f1;
+    border-radius: 6px;
+}
+
+.linked-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.node {
+    padding: 20px;
+    background: #f1f1f1;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.arrow {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.stack {
+    width: 300px;
+    margin: auto;
+}
+
+.stack-item {
+    padding: 18px;
+    margin: 5px 0;
+    background: #eee;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.top {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.info {
+    background: white;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+pre {
+    background: #222;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-x: auto;
+}
+
+@media (max-width: 700px) {
+
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-left: 0;
+    }
+
+}
